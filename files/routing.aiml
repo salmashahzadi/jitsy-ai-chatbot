@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category>
+  <pattern>TEACH ME *</pattern>
+  <template>
+    <srai>LESSON <star/></srai>
+  </template>
+</category>
+
+<category>
+  <pattern>LESSON <set>topics</set></pattern>
+  <template>
+    <srai><map name="topicredirect"><star/></map></srai>
+  </template>
+</category>
+
+</aiml>

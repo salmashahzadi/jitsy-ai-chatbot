@@ -4,11 +4,13 @@
 <category>
   <pattern>QUIZ ME</pattern>
   <template>
-    Question:
-    What is a bot persona?
+    <think><set name="quiz">1</set></think>
 
-    A. Code logic  
-    B. Bot personality  
+    Question:
+    What is persona?
+
+    A. Code  
+    B. Personality  
     C. Database  
 
     Say ANSWER A, B or C.
@@ -18,17 +20,26 @@
 <category>
   <pattern>ANSWER B</pattern>
   <template>
-    Correct ✅
-
-    Persona defines tone and personality.
+    <condition name="quiz">
+      <li value="1">
+        Correct ✅ Persona defines personality.
+        <think><set name="quiz">2</set></think>
+      </li>
+    </condition>
   </template>
 </category>
 
 <category>
   <pattern>ANSWER A</pattern>
   <template>
-    Incorrect ❌  
-    Correct answer is B.
+    Incorrect ❌ Correct is B.
+  </template>
+</category>
+
+<category>
+  <pattern>ANSWER C</pattern>
+  <template>
+    Incorrect ❌ Correct is B.
   </template>
 </category>
 

@@ -4,17 +4,24 @@
 <category>
   <pattern>WHAT IS CONVERSATIONAL DESIGN</pattern>
   <template>
-    Conversational Design is the practice of designing how bots communicate with users in a clear and helpful way.
+    It is the practice of designing how bots communicate with users in a natural and helpful way.
   </template>
 </category>
 
 <category>
   <pattern>WHAT IS USER INTENT</pattern>
   <template>
-    User intent is what the user wants to achieve.
+    User intent is the goal behind a message.
 
     Example:
     "I want refund" → intent = refund request
+  </template>
+</category>
+
+<category>
+  <pattern>DEFINE PERSONA</pattern>
+  <template>
+    Persona defines the tone, style, and personality of a chatbot.
   </template>
 </category>
 

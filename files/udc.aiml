@@ -4,13 +4,15 @@
 <category>
   <pattern>*</pattern>
   <template>
-    I can teach you Conversational Design.
+    I didn’t fully get that.
+
+    But I can help you learn Conversational Design.
 
     Try:
     - START COURSE
-    - SHOW TOPICS
-    - WHAT IS CONVERSATIONAL DESIGN
-    - QUIZ ME
+    - PRACTICE MODE
+    - COACH MODE
+    - EXPLAIN PERSONA SIMPLY
   </template>
 </category>
 

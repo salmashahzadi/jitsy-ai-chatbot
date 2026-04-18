@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<!-- START PRACTICE -->
+<category>
+  <pattern>PRACTICE MODE</pattern>
+  <template>
+    <think>
+      <set name="mode">practice</set>
+      <set name="scenario">refund</set>
+    </think>
+
+    🎯 Scenario 1:
+
+    A user says:
+    "I want a refund but your system is not working."
+
+    👉 Write how a GOOD chatbot should respond.
+  </template>
+</category>
+
+<!-- USER RESPONSE EVALUATION -->
+<category>
+  <pattern>*</pattern>
+  <that>🎯 Scenario 1*</that>
+  <template>
+
+    <think><set name="last_answer"><star/></set></think>
+
+    👍 Good attempt.
+
+    🧠 Feedback:
+    - Did you acknowledge the problem?
+    - Did you guide the user?
+    - Did you ask for required info?
+
+    💡 Ideal response:
+    "I’m sorry you're facing this issue. Can you share your order ID so I can help process your refund?"
+
+    Say NEXT PRACTICE.
+  </template>
+</category>
+
+<!-- NEXT SCENARIO -->
+<category>
+  <pattern>NEXT PRACTICE</pattern>
+  <template>
+    <think><set name="scenario">login</set></think>
+
+    🎯 Scenario 2:
+
+    User says:
+    "I can't login to my account"
+
+    👉 Write the best chatbot response.
+  </template>
+</category>
+
+<!-- SECOND EVALUATION -->
+<category>
+  <pattern>*</pattern>
+  <that>🎯 Scenario 2*</that>
+  <template>
+
+    👍 Nice try.
+
+    🧠 Feedback:
+    - Did you show empathy?
+    - Did you guide next step?
+    - Did you avoid robotic tone?
+
+    💡 Ideal:
+    "I'm sorry you're having trouble logging in. Try resetting your password or I can help you recover your account."
+
+    Say COACH MODE for deeper feedback.
+  </template>
+</category>
+
+</aiml>

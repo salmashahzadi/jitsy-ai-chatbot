@@ -2,51 +2,32 @@
 <aiml>
 
 <category>
-  <pattern>LESSON 1</pattern>
+  <pattern>EXPLAIN PERSONA SIMPLY</pattern>
   <template>
-    Conversational Design is the process of designing how a chatbot talks with users.
+    Imagine your chatbot is a human.
 
-    It focuses on:
-    - clarity
-    - helpful responses
-    - guiding users to a goal
+    Would it sound:
+    - Friendly?
+    - Serious?
+    - Helpful?
 
-    Say EXAMPLE or LESSON 2.
+    That personality is called Persona.
+
+    Good bots feel human, not robotic.
   </template>
 </category>
 
 <category>
-  <pattern>LESSON BASICS</pattern>
+  <pattern>WHY IS CONVERSATIONAL DESIGN IMPORTANT</pattern>
   <template>
-    Conversational Design means designing natural, human-like conversations between users and bots.
-  </template>
-</category>
+    Because bad chatbots frustrate users.
 
-<category>
-  <pattern>LESSON PERSONA</pattern>
-  <template>
-    Bot Persona defines how your chatbot behaves.
+    Good conversational design:
+    - reduces confusion
+    - improves user trust
+    - increases task success
 
-    Example:
-    - Friendly
-    - Professional
-    - Casual
-
-    A good persona builds trust.
-  </template>
-</category>
-
-<category>
-  <pattern>LESSON FLOWS</pattern>
-  <template>
-    Conversation flow is the path users follow to complete a task.
-
-    It includes:
-    - user input
-    - bot response
-    - next step
-
-    Good flows reduce confusion.
+    It turns bots into assistants, not obstacles.
   </template>
 </category>
 

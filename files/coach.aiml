@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category>
+  <pattern>COACH MODE</pattern>
+  <template>
+    <think><set name="mode">coach</set></think>
+
+    👨‍🏫 Coach Mode Activated.
+
+    I will now evaluate your answers like a real conversation designer.
+
+    Send your chatbot response again.
+  </template>
+</category>
+
+<category>
+  <pattern>*</pattern>
+  <that>👨‍🏫 Coach Mode Activated.*</that>
+  <template>
+
+    🧠 Evaluation:
+
+    ✔ Strengths:
+    - Clear intent understanding
+    - Structured response
+
+    ⚠ Improvements:
+    - Add empathy
+    - Guide user better
+
+    ⭐ Score: 7/10
+
+    💡 Tip:
+    Always follow:
+    Acknowledge → Guide → Confirm
+
+    Say ANOTHER SCENARIO.
+  </template>
+</category>
+
+<category>
+  <pattern>ANOTHER SCENARIO</pattern>
+  <template>
+    🎯 Scenario:
+
+    User: "Your app is confusing"
+
+    👉 Respond as a chatbot.
+  </template>
+</category>
+
+</aiml>

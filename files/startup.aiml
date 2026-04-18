@@ -6,37 +6,67 @@
   <template>
     Hi 👋 I am your Conversational Design Tutor.
 
-    Say START COURSE to begin learning.
+    You can:
+    - START COURSE
+    - SHOW TOPICS
+    - QUIZ ME
+    - PRACTICE MODE
   </template>
 </category>
 
 <category>
   <pattern>START COURSE</pattern>
   <template>
-    Great. Let’s begin.
+    <think><set name="lesson">1</set></think>
+    Great. Starting your learning journey.
 
-    Topics:
-    1. Conversational Design Basics
-    2. User Intent
-    3. Bot Persona
-    4. Conversation Flows
-    5. Error Handling
+    Say NEXT LESSON to continue.
+  </template>
+</category>
 
-    Say LESSON 1 to start.
+<category>
+  <pattern>NEXT LESSON</pattern>
+  <template>
+    <condition name="lesson">
+      <li value="1">
+        Lesson 1: Conversational Design Basics.
+        It is about designing helpful, human-like conversations.
+        <think><set name="lesson">2</set></think>
+      </li>
+      <li value="2">
+        Lesson 2: User Intent.
+        Understanding what the user wants is key.
+        <think><set name="lesson">3</set></think>
+      </li>
+      <li value="3">
+        Lesson 3: Bot Persona.
+        Defines tone and personality of the chatbot.
+        <think><set name="lesson">4</set></think>
+      </li>
+      <li value="4">
+        Lesson 4: Conversation Flows.
+        Structure of interaction between user and bot.
+        <think><set name="lesson">5</set></think>
+      </li>
+      <li value="5">
+        Lesson 5: Error Handling.
+        Good bots recover from confusion.
+      </li>
+    </condition>
   </template>
 </category>
 
 <category>
   <pattern>SHOW TOPICS</pattern>
   <template>
-    Available topics:
+    Topics:
     - Basics
     - Intent
     - Persona
     - Flows
-    - Errors
+    - Error Handling
 
-    Say LESSON BASICS or LESSON PERSONA.
+    Say LESSON PERSONA or TEACH ME FLOWS.
   </template>
 </category>
 
