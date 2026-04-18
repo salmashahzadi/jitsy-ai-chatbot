@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+  <pattern>WHAT IS CONVERSATIONAL DESIGN</pattern>
+  <template>
+    It is the practice of designing helpful, natural, and goal-oriented conversations between users and assistants.
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT IS USER INTENT</pattern>
+  <template>
+    User intent is the reason behind a message. Example: “I want a refund” means the intent is refund support.
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT IS PERSONA</pattern>
+  <template>
+    Persona is the tone, style, and behavior of an assistant.
+  </template>
+</category>
+
+<category>
+  <pattern>GIVE EXAMPLE</pattern>
+  <template>
+    Weak: “Invalid input.”
+    Better: “I didn’t catch the order ID. Please enter the 6-digit number from your receipt.”
+  </template>
+</category>
+
+<category>
+  <pattern>EXPLAIN SIMPLY</pattern>
+  <template>
+    <condition name="lesson">
+      <li value="2">User intent means what the user wants.</li>
+      <li value="3">Persona means how the assistant sounds.</li>
+      <li value="4">Flow means the path of the conversation.</li>
+      <li>Tell me the topic you want simplified.</li>
+    </condition>
+  </template>
+</category>
+
+</aiml>

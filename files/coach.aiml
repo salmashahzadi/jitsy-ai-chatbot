@@ -1,52 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="2.0">
 
 <category>
-  <pattern>COACH MODE</pattern>
+  <pattern>COACH THIS: *</pattern>
   <template>
-    <think><set name="mode">coach</set></think>
-
-    👨‍🏫 Coach Mode Activated.
-
-    I will now evaluate your answers like a real conversation designer.
-
-    Send your chatbot response again.
+    <think>
+      <set name="mode">coach</set>
+      <set name="student_answer"><star/></set>
+    </think>
+    [AI_COACH_REQUEST]
+    mode=coach
+    lesson=<get name="lesson"/>
+    difficulty=<get name="difficulty"/>
+    scenario=<get name="scenario"/>
+    answer=<star/>
   </template>
 </category>
 
 <category>
-  <pattern>*</pattern>
-  <that>👨‍🏫 Coach Mode Activated.*</that>
+  <pattern>ADAPT ME</pattern>
   <template>
-
-    🧠 Evaluation:
-
-    ✔ Strengths:
-    - Clear intent understanding
-    - Structured response
-
-    ⚠ Improvements:
-    - Add empathy
-    - Guide user better
-
-    ⭐ Score: 7/10
-
-    💡 Tip:
-    Always follow:
-    Acknowledge → Guide → Confirm
-
-    Say ANOTHER SCENARIO.
-  </template>
-</category>
-
-<category>
-  <pattern>ANOTHER SCENARIO</pattern>
-  <template>
-    🎯 Scenario:
-
-    User: "Your app is confusing"
-
-    👉 Respond as a chatbot.
+    [AI_ADAPT_REQUEST]
+    lesson=<get name="lesson"/>
+    difficulty=<get name="difficulty"/>
   </template>
 </category>
 

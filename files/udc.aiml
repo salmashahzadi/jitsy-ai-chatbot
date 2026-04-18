@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="2.0">
 
 <category>
   <pattern>*</pattern>
   <template>
-    I didn’t fully get that.
+    I’m not fully sure what you want to do yet.
 
-    But I can help you learn Conversational Design.
-
-    Try:
-    - START COURSE
-    - PRACTICE MODE
-    - COACH MODE
-    - EXPLAIN PERSONA SIMPLY
+    You can try:
+    START COURSE
+    SHOW TOPICS
+    LESSON PERSONA
+    QUIZ ME
+    PRACTICE
   </template>
 </category>
 

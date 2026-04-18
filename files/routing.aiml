@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="2.0">
 
 <category>
-  <pattern>TEACH ME *</pattern>
+  <pattern>LESSON <set>topics</set></pattern>
+  <template>
+    <srai><map name="topicredirect"><star/></map></srai>
+  </template>
+</category>
+
+<category>
+  <pattern>TEACH ME <set>topics</set></pattern>
   <template>
     <srai>LESSON <star/></srai>
   </template>
 </category>
 
 <category>
-  <pattern>LESSON <set>topics</set></pattern>
+  <pattern>EXPLAIN <set>topics</set></pattern>
   <template>
-    <srai><map name="topicredirect"><star/></map></srai>
+    <srai>LESSON <star/></srai>
   </template>
 </category>
 

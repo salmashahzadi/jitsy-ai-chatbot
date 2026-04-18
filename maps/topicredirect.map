@@ -1,7 +1,7 @@
 [
-["persona", "LESSON PERSONA"],
-["flows", "TEACH ME FLOWS"],
-["error", "TEACH ME ERROR HANDLING"],
 ["basics", "LESSON BASICS"],
+["persona", "LESSON PERSONA"],
+["flows", "LESSON FLOWS"],
+["repair", "LESSON REPAIR"],
 ["intent", "WHAT IS USER INTENT"]
 ]

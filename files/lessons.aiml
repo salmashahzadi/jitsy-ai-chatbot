@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="2.0">
 
 <category>
-  <pattern>EXPLAIN PERSONA SIMPLY</pattern>
+  <pattern>LESSON BASICS</pattern>
   <template>
-    Imagine your chatbot is a human.
-
-    Would it sound:
-    - Friendly?
-    - Serious?
-    - Helpful?
-
-    That personality is called Persona.
-
-    Good bots feel human, not robotic.
+    Conversational design means shaping how an assistant speaks, guides, and helps a user reach a goal with minimal confusion.
   </template>
 </category>
 
 <category>
-  <pattern>WHY IS CONVERSATIONAL DESIGN IMPORTANT</pattern>
+  <pattern>LESSON PERSONA</pattern>
   <template>
-    Because bad chatbots frustrate users.
+    Persona is the assistant’s communication style. A good persona is consistent, helpful, and suitable for the audience.
+  </template>
+</category>
 
-    Good conversational design:
-    - reduces confusion
-    - improves user trust
-    - increases task success
+<category>
+  <pattern>LESSON FLOWS</pattern>
+  <template>
+    A flow is the ordered path through a conversation. Strong flows reduce ambiguity and make the next step obvious.
+  </template>
+</category>
 
-    It turns bots into assistants, not obstacles.
+<category>
+  <pattern>LESSON REPAIR</pattern>
+  <template>
+    Repair design helps when the bot fails. Instead of saying “invalid input,” it should guide the user toward a recoverable next step.
+  </template>
+</category>
+
+<category>
+  <pattern>EXPLAIN PERSONA SIMPLY</pattern>
+  <template>
+    Think of persona as the assistant’s voice. Should it sound calm, formal, playful, or expert? That choice shapes trust.
+  </template>
+</category>
+
+<category>
+  <pattern>WHY DOES FLOW MATTER</pattern>
+  <template>
+    Flow matters because users do not want to guess what to do next. A good flow removes friction and keeps progress obvious.
   </template>
 </category>
 

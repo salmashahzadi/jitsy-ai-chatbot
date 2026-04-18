@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="2.0">
 
 <category>
   <pattern>HELLO</pattern>
   <template>
-    Hi 👋 I am your Conversational Design Tutor.
+    Welcome back. I’m your conversational design tutor.
+    You can start with:
+    START COURSE
+    SHOW TOPICS
+    PRACTICE
+    QUIZ ME
+  </template>
+</category>
 
-    You can:
-    - START COURSE
-    - SHOW TOPICS
-    - QUIZ ME
-    - PRACTICE MODE
+<category>
+  <pattern>HI</pattern>
+  <template>
+    <srai>HELLO</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>HEY</pattern>
+  <template>
+    <srai>HELLO</srai>
   </template>
 </category>
 
 <category>
   <pattern>START COURSE</pattern>
   <template>
-    <think><set name="lesson">1</set></think>
-    Great. Starting your learning journey.
-
-    Say NEXT LESSON to continue.
+    <think>
+      <set name="lesson">1</set>
+      <set name="mode">learn</set>
+      <set name="difficulty">beginner</set>
+    </think>
+    Great. We’ll go step by step.
+    Type NEXT LESSON to begin.
   </template>
 </category>
 
@@ -29,28 +45,32 @@
   <template>
     <condition name="lesson">
       <li value="1">
-        Lesson 1: Conversational Design Basics.
-        It is about designing helpful, human-like conversations.
         <think><set name="lesson">2</set></think>
+        Lesson 1: Conversational design is the practice of designing useful, clear, and goal-focused interactions between users and assistants.
+        Type EXPLAIN SIMPLY or NEXT LESSON.
       </li>
       <li value="2">
-        Lesson 2: User Intent.
-        Understanding what the user wants is key.
         <think><set name="lesson">3</set></think>
+        Lesson 2: User intent is the reason behind the user’s message.
+        Type GIVE EXAMPLE or NEXT LESSON.
       </li>
       <li value="3">
-        Lesson 3: Bot Persona.
-        Defines tone and personality of the chatbot.
         <think><set name="lesson">4</set></think>
+        Lesson 3: Persona is how the assistant sounds and behaves.
+        Type EXPLAIN PERSONA SIMPLY or NEXT LESSON.
       </li>
       <li value="4">
-        Lesson 4: Conversation Flows.
-        Structure of interaction between user and bot.
         <think><set name="lesson">5</set></think>
+        Lesson 4: Flow is the path a conversation follows from request to resolution.
+        Type TEACH ME FLOWS or NEXT LESSON.
       </li>
       <li value="5">
-        Lesson 5: Error Handling.
-        Good bots recover from confusion.
+        Lesson 5: Repair design helps users recover when the assistant does not understand.
+        Type LESSON REPAIR or PRACTICE.
+      </li>
+      <li>
+        You have completed the guided starter path.
+        Try QUIZ ME or PRACTICE.
       </li>
     </condition>
   </template>
@@ -59,14 +79,17 @@
 <category>
   <pattern>SHOW TOPICS</pattern>
   <template>
-    Topics:
-    - Basics
-    - Intent
-    - Persona
-    - Flows
-    - Error Handling
+    Available topics:
+    basics
+    intent
+    persona
+    flows
+    repair
 
-    Say LESSON PERSONA or TEACH ME FLOWS.
+    Try:
+    LESSON PERSONA
+    LESSON FLOWS
+    LESSON REPAIR
   </template>
 </category>
 
