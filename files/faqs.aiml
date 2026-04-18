@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+
+<category>
+  <pattern>WHAT IS CONVERSATIONAL DESIGN</pattern>
+  <template>
+    Conversational Design is the practice of designing how bots communicate with users in a clear and helpful way.
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT IS USER INTENT</pattern>
+  <template>
+    User intent is what the user wants to achieve.
+
+    Example:
+    "I want refund" → intent = refund request
+  </template>
+</category>
+
 </aiml>

@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+
+<category>
+  <pattern>QUIZ ME</pattern>
+  <template>
+    Question:
+    What is a bot persona?
+
+    A. Code logic  
+    B. Bot personality  
+    C. Database  
+
+    Say ANSWER A, B or C.
+  </template>
+</category>
+
+<category>
+  <pattern>ANSWER B</pattern>
+  <template>
+    Correct ✅
+
+    Persona defines tone and personality.
+  </template>
+</category>
+
+<category>
+  <pattern>ANSWER A</pattern>
+  <template>
+    Incorrect ❌  
+    Correct answer is B.
+  </template>
+</category>
+
 </aiml>

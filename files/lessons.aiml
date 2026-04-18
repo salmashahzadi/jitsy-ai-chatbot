@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+
+<category>
+  <pattern>LESSON 1</pattern>
+  <template>
+    Conversational Design is the process of designing how a chatbot talks with users.
+
+    It focuses on:
+    - clarity
+    - helpful responses
+    - guiding users to a goal
+
+    Say EXAMPLE or LESSON 2.
+  </template>
+</category>
+
+<category>
+  <pattern>LESSON BASICS</pattern>
+  <template>
+    Conversational Design means designing natural, human-like conversations between users and bots.
+  </template>
+</category>
+
+<category>
+  <pattern>LESSON PERSONA</pattern>
+  <template>
+    Bot Persona defines how your chatbot behaves.
+
+    Example:
+    - Friendly
+    - Professional
+    - Casual
+
+    A good persona builds trust.
+  </template>
+</category>
+
+<category>
+  <pattern>LESSON FLOWS</pattern>
+  <template>
+    Conversation flow is the path users follow to complete a task.
+
+    It includes:
+    - user input
+    - bot response
+    - next step
+
+    Good flows reduce confusion.
+  </template>
+</category>
+
 </aiml>

@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+
+<category>
+  <pattern>EXAMPLE</pattern>
+  <template>
+    Bad bot: "Invalid input."
+
+    Good bot: "I couldn’t understand that. Can you enter your order ID?"
+
+    Good design always guides the user.
+  </template>
+</category>
+
+<category>
+  <pattern>GIVE EXAMPLE</pattern>
+  <template>
+    Example:
+
+    User: I want refund  
+    Bot: Sure. Can you share your order ID?
+
+    This keeps conversation moving forward.
+  </template>
+</category>
+
 </aiml>

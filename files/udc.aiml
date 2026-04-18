@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-    <pattern>*</pattern>
-    <template>Hi How can I help you</template>
-  </category>
+
+<category>
+  <pattern>*</pattern>
+  <template>
+    I can teach you Conversational Design.
+
+    Try:
+    - START COURSE
+    - SHOW TOPICS
+    - WHAT IS CONVERSATIONAL DESIGN
+    - QUIZ ME
+  </template>
+</category>
+
 </aiml>

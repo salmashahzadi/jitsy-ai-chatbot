@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+
+<category>
+  <pattern>HELLO</pattern>
+  <template>
+    Hi 👋 I am your Conversational Design Tutor.
+
+    Say START COURSE to begin learning.
+  </template>
+</category>
+
+<category>
+  <pattern>START COURSE</pattern>
+  <template>
+    Great. Let’s begin.
+
+    Topics:
+    1. Conversational Design Basics
+    2. User Intent
+    3. Bot Persona
+    4. Conversation Flows
+    5. Error Handling
+
+    Say LESSON 1 to start.
+  </template>
+</category>
+
+<category>
+  <pattern>SHOW TOPICS</pattern>
+  <template>
+    Available topics:
+    - Basics
+    - Intent
+    - Persona
+    - Flows
+    - Errors
+
+    Say LESSON BASICS or LESSON PERSONA.
+  </template>
+</category>
+
 </aiml>
